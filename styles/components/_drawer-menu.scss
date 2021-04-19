@@ -1,6 +1,6 @@
 .drawer-menu {
   $drawer-menu-item-height: 36px;
-  $drawer-menu-list-padding: 8px;
+  $drawer-menu-list-padding: 20px;
   $community-length: 8;
   $store-length: 9;
   $expert-length: 2;
@@ -65,11 +65,11 @@
 
     i {
       &:first-child {
-        position: relative; // TODO Check
-        top: 1px; //TODO Check
+        position: relative; // TODO: Check
+        top: 1px; //TODO: Check
+        margin-right: 8px;
         font-size: 24px;
         color: $primary;
-        margin-right: 8px;
       }
       &:last-child {
         @include pos-center-y;
@@ -84,7 +84,6 @@
   &-content {
     max-height: 0;
     overflow: hidden;
-    // display: none;
     transition: max-height 200ms ease-in-out;
   }
 
@@ -98,7 +97,7 @@
       @include flexbox(start);
       @include text-style(14, $primary);
       width: 100%;
-      height: 36px;
+      height: $drawer-menu-item-height;
       padding: 0 12px;
       font-weight: 700;
     }
