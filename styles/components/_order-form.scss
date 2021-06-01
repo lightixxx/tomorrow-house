@@ -1,0 +1,35 @@
+.order-form {
+  padding: 20px 0 40px;
+
+  .order-inputs {
+    .select-group {
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .order-summary {
+    @include flexbox(between);
+    padding: 20px 0;
+
+    dt {
+      @include text-style(13, $dark);
+      font-weight: 700;
+    }
+  }
+
+  .button-group {
+    @include flexbox(between);
+
+    button {
+      width: 50%;
+
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+  }
+}
