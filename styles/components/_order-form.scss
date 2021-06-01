@@ -1,7 +1,9 @@
 .order-form {
-  padding: 20px 0 40px;
+  margin-bottom: 40px;
 
   .order-inputs {
+    margin-bottom: 20px;
+
     .select-group {
       margin-bottom: 8px;
 
@@ -13,7 +15,7 @@
 
   .order-summary {
     @include flexbox(between);
-    padding: 20px 0;
+    margin-bottom: 20px;
 
     dt {
       @include text-style(13, $dark);
