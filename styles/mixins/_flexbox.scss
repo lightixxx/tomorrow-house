@@ -23,7 +23,7 @@ $flex-map: (
   justify-content: _get-flex-value($jc);
 }
 
-@mixin colume-flexbox($jc: center, $ai: center) {
+@mixin column-flexbox($jc: center, $ai: center) {
   display: inline-flex;
   flex-direction: column;
   align-items: _get-flex-value($ai);
