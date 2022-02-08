@@ -49,7 +49,7 @@
     @include pos-center-x(fixed);
     bottom: 40px;
     height: 80px;
-    min-width: 480px;
+    max-width: 480px;
     padding-right: 20px;
     padding-left: 56px;
     overflow: hidden;
